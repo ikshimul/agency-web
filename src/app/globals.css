@@ -2,26 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.my-background-color{
+  background-color: rgba(215, 245, 220, 1);
+}
+.my-button-bg-color{
+  background-color: #20B15A;
+}
+.my-border-color{
+  border-color:  #20B15A;
+}
+.my-text-color{
+  color: #20B15A;
+}
+.subscribe-btn-bg-color{
+  background-color: #F55F1D;
+}
+.team-social-link{
+  top: 66%;
+  left: 34%;
+  width: 145px;
+  height: 50px;
+  background-color: white;
+  padding: 4px;
+  border-radius: 25px;
+}
+.skew {
+  display: none;
+}
+.skewed-top-right .skew-top.mr-for-radius {
+  display: block;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.skewed-top-left .skew-top.ml-for-radius {
+  display: block;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.skewed-bottom-right .skew-bottom.mr-for-radius {
+  display: block;
+}
+
+.skewed-bottom-left .skew-bottom.ml-for-radius {
+  display: block;
+}
+
+.skewed-top-right .radius-for-skewed {
+  border-top-right-radius: 6rem;
+}
+
+.skewed-top-left .radius-for-skewed {
+  border-top-left-radius: 6rem;
+}
+
+.skewed-bottom-right .radius-for-skewed {
+  border-bottom-right-radius: 6rem;
+}
+
+.skewed-bottom-left .radius-for-skewed {
+  border-bottom-left-radius: 6rem;
 }
